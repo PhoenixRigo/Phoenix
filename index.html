@@ -2,21 +2,139 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/index.css">
-    <title>Phoenix</title>
+    <title>PHOENIX</title>
+
+    <link rel="stylesheet" href="main/css/master.css">
+
   </head>
   <body>
 
-    <div class="main">
-      <div class="img a1"></div>
-      <div class="img a2"></div>
-      <div class="img a3"></div>
-      <div class="img a4"></div>
-      <div class="img a5"></div>
-      <div class="img a6"></div>
-      <div class="img a8"></div>
-      <div class="img a7"></div>
-    </div>
+
+<!--
+      <svg width="225.7" height="193" style="z-index: -1000;">
+        <path d="M0 193 L221.7 193 L110.85 0z" class="path"/>
+      </svg>
+      <svg width="225.7" height="193" style="transform: translateX(-112.85px);" style="z-index: -1000;">
+        <path d="M0 0 L221.7 0 L110.85 193z" class="path" style="/*transform: translateX(110.85px);*/"/>
+      </svg>
+-->
+
+  <div class="center">
+
+    <svg width="443.4" height="386" id="main">
+      <g style="transform: translateX(110.50px);">
+
+<!--
+        <g>
+          <path d="M0 193 L221.7 193 L110.85 0z" class="path" onclick="phoenix()"/>
+          <text x="64" y="135" class="tris_title" onclick="phoenix()">PHOENIX</text>
+        </g>
+
+
+        <g class="hidde" style="transform: translateX(110.85px); opacity: 0;">
+          <path d="M0 0 L221.7 0 L110.85 193z" class="path"/>
+        </g>
+
+
+        <g class="hidde" style="transform: translateY(193px); opacity: 0;">
+          <path d="M0 0 L221.7 0 L110.85 193z" class="path" onclick="moi()"/>
+          <text x="92" y="80" class="tris_title" onclick="moi()">BIO</text>
+        </g>
+
+
+        <g class="hidde" style="transform: translateX(-110.85px); opacity: 0;">
+          <path d="M0 0 L221.7 0 L110.85 193z" class="path"/>
+          <text x="60" y="80" class="tris_title" onclick="moi()">CREATION</text>
+        </g>
+-->
+
+        <g>
+          <path d="M0 193 L221.7 193 L110.85 0z" class="path" onclick="phoenix()"/>
+          <text x="64" y="135" class="tris_title" onclick="phoenix()">PHOENIX</text>
+        </g>
+
+
+        <g class="hidde" style="transform: translateX(110.85px); opacity: 0;">
+          <path d="M0 0 L221.7 0 L110.85 193z" class="path"/>
+        </g>
+
+
+        <g class="hidde" style="transform: translateY(193px); opacity: 0;">
+          <path d="M0 0 L221.7 0 L110.85 193z" class="path" onclick="bio()"/>
+          <g style="transform: rotate(60deg);"><text x="92" y="-10" class="tris_title" onclick="bio()">BIO</text></g>
+        </g>
+
+
+        <g class="hidde" style="transform: translateX(-110.85px); opacity: 0;">
+          <path d="M0 0 L221.7 0 L110.85 193z" class="path" onclick="creation()"/>
+          <g style="transform: rotate(-60deg);"><text x="-50" y="190" class="tris_title" onclick="creation()">CREATION</text></g>
+        </g>
+
+      </g>
+    </svg>
+
+  </div>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+
+    document.getElementById('main').style.width = (2 * 221.7);
+    document.getElementById('main').style.height = (2 * 193);
+
+
+
+    var flag = 1;
+
+    function phoenix() {
+      if (flag === 1) {
+        flag = 0;
+        document.getElementsByClassName('hidde')[0].style = "transform: translateX(110.85px); opacity: 1;";
+        document.getElementsByClassName('hidde')[1].style = "transform: translateY(193px); opacity: 1;";
+        document.getElementsByClassName('hidde')[2].style = "transform: translateX(-110.85px); opacity: 1;";
+
+
+      }
+      else {
+        flag = 1;
+        document.getElementsByClassName('hidde')[0].style = "transform: translateX(110.85px); opacity: 0;";
+        document.getElementsByClassName('hidde')[1].style = "transform: translateY(193px); opacity: 0;";
+        document.getElementsByClassName('hidde')[2].style = "transform: translateX(-110.85px); opacity: 0;";
+
+      }
+    }
+
+
+
+    function bio() {
+      if (flag === 1) {
+        flag = 0;
+        document.getElementById('main').style = "transform: rotate(0deg);";
+      }
+      else {
+        flag = 1;
+        document.getElementById('main').style = "transform: rotate(-60deg);";
+      }
+    }
+
+
+
+    function creation() {
+      if (flag === 1) {
+        flag = 0;
+        document.getElementById('main').style = "transform: rotate(0deg);";
+      }
+      else {
+        flag = 1;
+        document.getElementById('main').style = "transform: rotate(60deg);";
+      }
+    }
+  </script>
+
 
   </body>
 </html>
