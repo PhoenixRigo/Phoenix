@@ -73,6 +73,26 @@ body {
 
 }*/
 
+
+.circle {
+  stroke: #888;
+  stroke-width: 3;
+  fill: transparent;
+
+/*
+fill: #888;*/
+}
+/*
+.svg_C {
+  /*transition: all ease 0.3s !important;*//*
+}
+.svg_C:hover {
+  transform: scale(1.3) !important;
+  transform-origin: 378px 650px;
+}
+*/
+
+
 /*============*/
 
 

@@ -1,3 +1,4 @@
+
     var tris_W = 221.7,
         tris_H = 193;
 /*
@@ -51,10 +52,15 @@
       if (flag === 1) {
         flag = 0;
         document.getElementById('main').style = "transform: translate(" + (tris_W/2) + "px, 0px);";
+        document.getElementById('main').style.width = ((tris_W * 2) + 200);
+
+        document.getElementById('C_contact').style = "transition: opacity ease 0.3s; transition-delay: 0.3s; opacity: 1; position: absolute; transform: translate(" + (tris_W/2)*-1 + "px, " + (tris_H)*-1 + "px);";
       }
       else {
         flag = 1;
         document.getElementById('main').style = "transform: translate(0px, 0px);";
+
+        document.getElementById('C_contact').style = "opacity: 0;"
       }
     }
 
