@@ -32,8 +32,8 @@
 
 
         <g class="hidde" style="transform: translateX(110.85px); opacity: 0;">
-          <path d="M0 0 L221.7 0 L110.85 193z" class="path"/>
-                    <text x="60" y="80" class="tris_title" onclick="creation()">CREATION</text>
+          <path d="M0 0 L221.7 0 L110.85 193z" class="path" onclick="creation()"/>
+                    <text x="59" y="80" class="tris_title" onclick="creation()">CREATION</text>
         </g>
 
 
@@ -44,8 +44,8 @@
 
 
         <g class="hidde" style="transform: translateX(-110.85px); opacity: 0;">
-          <path d="M0 0 L221.7 0 L110.85 193z" class="path" onclick="creation()"/>
-          <text x="60" y="80" class="tris_title" onclick="creation()">CREATION</text>
+          <path d="M0 0 L221.7 0 L110.85 193z" class="path" onclick="contact()"/>
+          <text x="60" y="80" class="tris_title" onclick="contact()">CONTACT</text>
         </g>
 
 <!--
@@ -159,10 +159,23 @@
 
 
 
-    function creation() {
+    function contact() {
       if (flag === 1) {
         flag = 0;
         document.getElementById('main').style = "transform: translate(" + (tris_W/2) + "px, 0px);";
+      }
+      else {
+        flag = 1;
+        document.getElementById('main').style = "transform: translate(0px, 0px);";
+      }
+    }
+
+
+
+    function creation() {
+      if (flag === 1) {
+        flag = 0;
+        document.getElementById('main').style = "transform: translate(" + (tris_W/2)* -1 + "px, 0px);";
       }
       else {
         flag = 1;
