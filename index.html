@@ -33,6 +33,7 @@
 
         <g class="hidde" style="transform: translateX(110.85px); opacity: 0;">
           <path d="M0 0 L221.7 0 L110.85 193z" class="path"/>
+                    <text x="60" y="80" class="tris_title" onclick="creation()">CREATION</text>
         </g>
 
 
@@ -43,7 +44,7 @@
 
 
         <g class="hidde" style="transform: translateX(-110.85px); opacity: 0;">
-          <path d="M0 0 L221.7 0 L110.85 193z" class="path"/>
+          <path d="M0 0 L221.7 0 L110.85 193z" class="path" onclick="creation()"/>
           <text x="60" y="80" class="tris_title" onclick="creation()">CREATION</text>
         </g>
 
@@ -85,12 +86,12 @@
 
   <script type="text/javascript">
 
-    var tris_H = 221.7,
-        tris_W = 193;
-
+    var tris_W = 221.7,
+        tris_H = 193;
+/*
     document.getElementById('main').style.width = (2 * tris_W);
     document.getElementById('main').style.height = (2 * tris_H);
-
+*/
 
 
     var flag = 1;
@@ -147,11 +148,11 @@
     function bio() {
       if (flag === 1) {
         flag = 0;
-        document.getElementById('main').style = "transform: translateY(0px);";
+        document.getElementById('main').style = "transform: translate(0px, 0px);";
       }
       else {
         flag = 1;
-        document.getElementById('main').style = "transform: translateY(" + ((tris_H) * (-1))+ "px);";
+        document.getElementById('main').style = "transform: translate(0px, " + (tris_H * -1) + "px);";
         console.log(tris_H * -1);
       }
     }
@@ -161,11 +162,11 @@
     function creation() {
       if (flag === 1) {
         flag = 0;
-        document.getElementById('main').style = "transform: rotate(0deg);";
+        document.getElementById('main').style = "transform: translate(" + (tris_W/2) + "px, 0px);";
       }
       else {
         flag = 1;
-        document.getElementById('main').style = "transform: rotate(60deg);";
+        document.getElementById('main').style = "transform: translate(0px, 0px);";
       }
     }
 
