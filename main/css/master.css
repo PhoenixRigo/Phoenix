@@ -75,9 +75,11 @@ body {
 
 
 .circle {
-  stroke: #888;
+  /*stroke: #888;
   stroke-width: 3;
-  fill: transparent;
+  fill: transparent;*/
+
+  fill: #ccc;
 
 /*
 fill: #888;*/
@@ -107,3 +109,61 @@ fill: #888;*/
   justify-content: center;
   align-items: center;
 }
+
+
+
+
+
+
+
+
+
+/*==============*/
+
+.container {
+  opacity: 0;
+
+  transition: opacity ease 0.3s;
+
+  /*border-top: solid 1px #aaa;*/
+  position: absolute;
+
+  transform: translate(-800px, -450px);
+
+  z-index: 0;
+}
+.container svg {
+  /*border-top: solid 1px #aaa;*/
+  position: absolute;
+
+}
+
+.txt {
+  overflow: hidden;
+  transition: all ease 0.5s;
+
+  background-color: #333;
+  height: 800px;
+  width: 600px;
+}
+
+.txt p {
+  margin: 0;
+  font-size: 17px;
+  color: #ccc;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.line {
+  stroke: #ccc;
+  stroke-width: 1;
+  fill: transparent;
+
+  transition: all ease 0.5s;
+  transition-delay: 0s;
+
+  stroke-dasharray: 1000;
+  stroke-dashoffset: -1000;
+}
+/*==============*/

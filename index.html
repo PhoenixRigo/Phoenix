@@ -21,40 +21,53 @@
 
   <div class="center">
 
-    <svg width="443.4" height="386" id="main">
-      <g style="transform: translateX(110.50px);">
+    <div id="main">
+      <svg width="443.4" height="386">
+        <g style="transform: translateX(110.50px);">
 
-        <g>
-          <path d="M0 193 L221.7 193 L110.85 0z" class="path" onclick="phoenix()"/>
-          <text x="64" y="135" class="tris_title" onclick="phoenix()">PHOENIX</text>
+          <g>
+            <path d="M0 193 L221.7 193 L110.85 0z" class="path" onclick="phoenix()"/>
+            <text x="64" y="135" class="tris_title" onclick="phoenix()">PHOENIX</text>
+          </g>
+
+
+
+
+          <g class="hidde" style="transform: translateX(110.85px); opacity: 0;">
+            <path d="M0 0 L221.7 0 L110.85 193z" class="path" onclick="creation()"/>
+            <text x="59" y="80" class="tris_title" onclick="creation()">CREATION</text>
+          </g>
+
+
+          <g class="hidde" style="transform: translateY(193px); opacity: 0;">
+            <path d="M0 0 L221.7 0 L110.85 193z" class="path" onclick="bio()"/>
+            <text x="92" y="80" class="tris_title" onclick="bio()">BIO</text>
+          </g>
+
+
+          <g class="hidde" style="transform: translateX(-110.85px); opacity: 0;">
+            <path d="M0 0 L221.7 0 L110.85 193z" class="path" onclick="contact()"/>
+            <text x="60" y="80" class="tris_title" onclick="contact()">CONTACT</text>
+          </g>
         </g>
+      </svg>
+
+      <div class="container">
+        <svg width="806px" height="66">
+          <path d="M0 0 L700 0 L800 60" class="line"/>
+          <circle cx="800" cy="60" r="6" class="circle" />
+        </svg>
+        <div class="txt">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <img src="main/src/img/mat/fire.png"/ width="100%">
+        </div>
+      </div>
 
 
 
-
-        <g class="hidde" style="transform: translateX(110.85px); opacity: 0;">
-          <path d="M0 0 L221.7 0 L110.85 193z" class="path" onclick="creation()"/>
-          <text x="59" y="80" class="tris_title" onclick="creation()">CREATION</text>
-        </g>
+    </div>
 
 
-        <g class="hidde" style="transform: translateY(193px); opacity: 0;">
-          <path d="M0 0 L221.7 0 L110.85 193z" class="path" onclick="bio()"/>
-          <text x="92" y="80" class="tris_title" onclick="bio()">BIO</text>
-        </g>
-
-
-        <g class="hidde" style="transform: translateX(-110.85px); opacity: 0;">
-          <path d="M0 0 L221.7 0 L110.85 193z" class="path" onclick="contact()"/>
-          <text x="60" y="80" class="tris_title" onclick="contact()">CONTACT</text>
-        </g>
-      </g>
-
-
-    </svg>
-    <svg width="15" height="15" id="C_contact" class="svg_C" style="opacity: 0;">
-      <circle cx="7.5" cy="7.5" r="6" class="circle" />
-    </svg>
 
   </div>
 
