@@ -77,3 +77,70 @@
         document.getElementById('main').style = "transform: translate(0px, 0px);";
       }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if (Habitude, Un fait, Qui ne s’arrête pas) {
+  function Present_Simple() {
+    if (Afirmatif) {
+      le verbe à l’infinitif
+      ex : “You eat apples everyday.”
+    }
+
+    if (Intérogatif) {
+      auxilière (Do(do || Does), be, have)
+      ex : “Do you eat apples everyday ?”
+    }
+
+    if (Négatif) {
+      auxilière (Do = don’t || Does = doesn’t || Have = Haven’t || Has = Hasen’t)
+      ex : “You don’t eat apples everyday.”
+    }
+  }
+}
