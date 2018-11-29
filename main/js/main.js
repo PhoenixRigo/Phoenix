@@ -51,7 +51,8 @@
     function contact() {
       if (flag === 1) {
         flag = 0;
-        document.getElementById('main').style = "transform: translate(" + (tris_W/2) + "px, 0px);";
+        //document.getElementById('main').style = "transform: translate(" + (tris_W/2) +"px, 0px);";
+        document.getElementById('main').style = "transform: translate(" + 722 +"px, " + -150 + "px);";
         document.getElementById('main').style.width = ((tris_W * 2) + 200);
         document.getElementsByClassName('container')[0].style.opacity = 1;
 
@@ -61,8 +62,8 @@
       }
       else {
         flag = 1;
-        document.getElementById('main').style = "transform: translate(0px, 0px);";
-        document.getElementsByClassName('container')[0].style.opacity = 0;
+        document.getElementById('main').style = "transform: translate(0px, 0px); transition-delay: 0.3s;";
+        document.getElementsByClassName('container')[0].style = "opacity: 0; transition-delay: 0.3s;";
         //document.getElementById('C_contact').style = "opacity: 0;"
 
         document.getElementsByClassName('line')[0].style = "stroke-dashoffset: -1000;";
